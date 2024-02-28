@@ -2,7 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
     <title>Title</title>
+
+    <style>
+        .red{
+            background-color: red;
+        }
+        .oldlace{
+            background-color: oldlace;
+        }
+        .darkcyan{
+            background-color: darkcyan;
+        }
+        .cyan{
+            background-color: cyan;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .pink{
+            color: pink;
+        }
+        .teal{
+            color: teal;
+        }
+        .purple{
+            color: purple;
+        }
+        .firebrick{
+            color: firebrick;
+        }
+        .lightslategrey{
+            color: lightslategrey;
+        }
+        .goldenrod{
+            color: goldenrod;
+        }
+
+    </style>
 </head>
 <body>
 <div class="container">
@@ -13,11 +55,17 @@
             <button id="1">red</button>
             <button id="2">green</button>
             <button id="3">blue</button>
+            <button id="7">oldlace</button>
+            <button id="8">darkcyan</button>
+            <button id="9">cyan</button>
         </div>
         <div class="row">
             <button id="4">pink</button>
             <button id="5">teal</button>
             <button id="6">purple</button>
+            <button id="10">firebrick</button>
+            <button id="11">lightslategrey</button>
+            <button id="12">goldenrod</button>
         </div>
         <button id="clear">clear</button>
     </div>
@@ -27,11 +75,98 @@
     const  red = document.getElementById('1');
     const  green = document.getElementById('2');
     const  blue = document.getElementById('3');
+    const  oldlace = document.getElementById('7');
+    const  darkcyan = document.getElementById('8');
+    const  cyan = document.getElementById('9');
 
     const  pink = document.getElementById('4');
     const  teal = document.getElementById('5');
     const  purple = document.getElementById('6');
+    const  firebrick = document.getElementById('10');
+    const  lightslategrey = document.getElementById('11');
+    const  goldenrod = document.getElementById('12');
 
+
+    const clearbutton = document.getElementById('clear')
+
+
+
+    oldlace.addEventListener('click', function (e){
+        removeBGColor();
+        content.classList.add('oldlace');
+    });
+    darkcyan.addEventListener('click', function (e){
+        removeBGColor();
+        content.classList.add('darkcyan');
+    });
+    cyan.addEventListener('click', function (e){
+        removeBGColor();
+        content.classList.add('cyan');
+    });
+    red.addEventListener('click', function (e){
+        removeBGColor();
+        content.classList.add('red');
+    });
+
+    green.addEventListener('click', function (e){
+        removeBGColor();
+        content.classList.add('green');
+    });
+
+    blue.addEventListener('click', function (e){
+        removeBGColor();
+        content.classList.add('blue');
+    });
+
+    firebrick.addEventListener('click', function (e){
+        removeTextColor();
+        content.classList.add('firebrick');
+    });
+
+    lightslategrey.addEventListener('click', function (e){
+        removeTextColor();
+        content.classList.add('lightslategrey');
+    });
+
+    goldenrod.addEventListener('click', function (e){
+        removeTextColor();
+        content.classList.add('goldenrod');
+    });
+
+    pink.addEventListener('click', function (e){
+        removeTextColor();
+        content.classList.add('pink');
+    });
+
+    teal.addEventListener('click', function (e){
+        removeTextColor();
+        content.classList.add('teal');
+    });
+
+    purple.addEventListener('click', function (e){
+        removeTextColor();
+        content.classList.add('purple');
+    });
+    clearbutton.addEventListener("click", function (e){
+        removeTextColor();
+        removeBGColor();
+    });
+    function removeBGColor(){
+        content.classList.remove('red');
+        content.classList.remove('green');
+        content.classList.remove('blue');
+        content.classList.remove('oldlace');
+        content.classList.remove('darkcyan');
+        content.classList.remove('cyan');
+    }
+    function removeTextColor(){
+        content.classList.remove('pink');
+        content.classList.remove('teal');
+        content.classList.remove('purple');
+        content.classList.remove('firebrick');
+        content.classList.remove('lightslategrey');
+        content.classList.remove('goldenrod');
+    }
 </script>
 </body>
 </html>

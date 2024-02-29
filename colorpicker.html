@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>colorpicker</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi enim nunc faucibus a pellentesque. Pellentesque nec nam aliquam sem et tortor consequat. Leo integer malesuada nunc vel. Sed ullamcorper morbi tincidunt ornare massa eget egestas. Tristique nulla aliquet enim tortor. Convallis a cras semper auctor neque vitae tempus quam. Massa vitae tortor condimentum lacinia quis vel eros donec ac. Risus pretium quam vulputate dignissim suspendisse in est. Sed arcu non odio euismod lacinia. Aliquam malesuada bibendum arcu vitae. Nisi est sit amet facilisis magna etiam. In hac habitasse platea dictumst quisque sagittis purus sit. Leo urna molestie at elementum.</p>
+        <div class="row">
+            <h3>Background</h3>
+            <input type="color">
+        </div>
+        <div class="row">
+            <h3>Text! </h3>
+            <input type="color" id="txt">
+        </div>
+        <button id="clear">CLEAR</button>
+    </div>
+</div>
+<script>
+    const content = document. querySelector ('.content');
+    const bg = document.getElementById('bg');
+    const txt = document.getElementById('txt')
+    const clear = document.getElementById('clear');
+
+
+
+
+    bg.addEventListener('change', function (e){
+        content.style.backgroundColor = e.target.value;
+    });
+
+    txt.addEventListener('change', function (e) {
+        content.style.color = e.target.value;
+    });
+
+
+</ script>
+</body>
+</html>

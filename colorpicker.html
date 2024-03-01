@@ -36,8 +36,14 @@
     txt.addEventListener('change', function (e) {
         content.style.color = e.target.value;
     });
+    clear.addEventListener("click", function (e){
+        content.style.background = 'white';
+        bg.value = '#FFFFFF'
+        content.style.color = 'black';
+        txt.value ='000000'
+    });
 
 
-</ script>
+</script>
 </body>
 </html>

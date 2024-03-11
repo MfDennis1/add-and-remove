@@ -1,15 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
-    <title>Avatar</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>avatar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<img src="https://www.treehugger.com/thmb/Ry8TrXKVLlp3Nur58hoU8phaqXQ=/4912x2760/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2017__03__AnnRic_Malaysia_Open_Nature_2017-a290f0c9e06348e881053594478131fd.jpeg">
-<script>
-  const picture = document.querySelector('img')
-  picture.src='https://cdn.rapzilla.com/wp-content/uploads/2023/07/16143429/Screen-Shot-2023-07-16-at-2.34.17-PM.png'
+<div class="row">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1OupaI8lXMVbk4F3xWINvTo2ueEbHkWfYIw&usqp=CAU" width="150" height="150">
+    <div class="row">
+        <button id="1">avatar1</button >
+        <button id="2">avatar2</button>
+        <button id="3">avatar3</button>
+        <button id="4">avatar4</button>
+        <button id="5">avatar5</button>
+        <button id="6">avatar6</button>
+    </div>
+    <script>
+    const avatar1 = document.getElementById('1');
+    const avatar2 = document.getElementById('2');
+    const avatar3 = document.getElementById('3');
+    const avatar4 = document.getElementById('4');
+    const avatar5 = document.getElementById('5');
+    const avatar6 = document.getElementById('6');
+    const picture = document.querySelector('img')
+    avatar1.addEventListener('click', function (e){ picture.src='https://www.giantbomb.com/a/uploads/scale_small/13/135472/1891764-007squirtle.png'});
+    avatar2.addEventListener('click', function (e){ picture.src='https://i.insider.com/57910997dd0895a56e8b456d?width=600&format=jpeg&auto=webp'});
+    avatar3.addEventListener('click', function (e){ picture.src='https://honestgamer560559905.files.wordpress.com/2019/09/pokemon-pikachu-wall-decal.jpg?w=1000'});
+    avatar4.addEventListener('click', function (e){ picture.src='https://i.redd.it/blue-lock-characters-as-pokemon-because-why-not-v0-sqswrtog5sda1.png?width=1200&format=png&auto=webp&s=7f48e54512ab57ba3f25c9b87ed9bff8cbe60cc1'});
+    avatar5.addEventListener('click', function (e){ picture.src='https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1379727070i/3130.png'});
+    avatar6.addEventListener('click', function (e){ picture.src='https://c02.purpledshub.com/uploads/sites/62/2022/05/psyduck-249ddf6.jpg?webp=1&w=1200'});
 </script>
 </body>
 </html>
